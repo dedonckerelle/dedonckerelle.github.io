@@ -17,7 +17,7 @@ body, html{
     background-repeat: no-repeat;
 
     background-attachment: fixed;
-    /* remember, for mobiole use 'scroll' */
+    /* remember, for mobile use 'scroll' */
 }
 
 
@@ -52,7 +52,7 @@ body, html{
     color: #666;
 }
 .section-dark{
-    background-color: #282e34;
+    background-color: red;
     color: #ddd;
  
 }
