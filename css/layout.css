@@ -1,14 +1,12 @@
 body, html{
     height:100%;
     margin:0;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "calibri light", sans-serif;
     font-weight:400;
     line-height: 1.8em;
     color: #091a0b;    
 }  
-
-
 
 .img1, .img2, .img3, .img4{
     position: relative;
@@ -20,12 +18,11 @@ body, html{
     background-attachment: fixed;
     /* for mobile use 'scroll' */
 }
+
 @media only screen and (max-width: 568px) {
     .img1, .img2, .img3, .img4{
          background-attachment: scroll;
-
-}
-
+    }
 }
 
 .img1{
@@ -37,56 +34,57 @@ body, html{
     background-image: url('../img/ipad.jpg');
     min-height: 400px;
 }
+
 .img3{
     background-image: url('../img/2.jpg');
     min-height: 400px;
 }
 
 .img4{
-    background-image: url('../img/pen.jpg');
+    background-image: url('../img/pen.jpg'), linear-gradient(rgba(9, 26, 11, 0.144), rgba(9, 26, 11, 0.144));
+    background-blend-mode: overlay;
     min-height: 400px;
-    
 }
-
 
 .section{
     padding: 5% 20% 5% 20%;
     text-align: center;
 }
+
 .section-light{
     background-color: #e9ebe9;
     color: #091a0b; /*#666; */
 }
+
 .section-dark{
     background-color: #091a0b; /*#282e34; */
     color: rgb(230, 230, 230);
- 
-}
+ }
 
 h2{
     color:#091a0b;
     text-align: center;
-
 }
+
 ul li{
     list-style-type: none;
 }
 
 @media only screen and (max-width: 568px) {
     ul li{ list-style-type: disc;
+    }
 }
-}
+
 .ptext{
     position:absolute;
     top:50%;
     width: 100%;
     text-align: center;
     color: #000;
-    font-size:24px;
+    font: size 26px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
-
 
 .ptext .border{
     background-color: #091a0b; /*#692019*/
@@ -94,8 +92,7 @@ ul li{
     padding:20px; /*grijze titeltjes padding*/
 }
 
-
-/* About me  */
+/* About */
 .gridcont{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -105,33 +102,24 @@ ul li{
 }
 
 @media only screen and (max-width: 568px) {
-    .gridcont{ display:block
+    .gridcont{ display:block;
     }
 }
-
- 
-
 
 /* strenghts */
 
 .row {
     display: flex;
   }
-
   
 .column {
     flex: 50%;
-
   }
 
   @media only screen and (max-width: 568px) {
     .row{ display:block
     }
-
   }
-
-
-
 
 /* Contactform */
 .formcontainer {
@@ -153,7 +141,6 @@ textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: rgb(71, 71, 71);
     color: white;
@@ -169,7 +156,6 @@ textarea {
     background-color: #5aab61;
   }
 
-
   @media only screen and (max-width: 568px) {
     .formcontainer {
         width: 100%;
@@ -180,16 +166,15 @@ textarea {
       }
 }
 
-@media only screen and (max-width: 568px) {
-  
-}
-
-
 
 /*doorschijnende titelbox--
  .ptext .border.trans {
     background-color: transparent;
 } */
 
-
+@media only screen and (max-width: 568px) {
+    body, html{
+        font-size: 16px;
+    }
+}
 
